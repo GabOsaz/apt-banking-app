@@ -28,8 +28,8 @@ export default function Home({ activeNav }) {
       workTitle: 'Flow swift transfer'
     },
     {
-      start: 13,
-      end: 17,
+      start: 14,
+      end: 19,
       completedColor:'bg-yellow-700',
       incompleteColor: 'bg-yellow-400',
       textColor: 'text-yellow-800',
@@ -92,7 +92,7 @@ export default function Home({ activeNav }) {
       workTitle: 'Mobile app redesign'
     },
     {
-      start: 18,
+      start: 17,
       end: 22,
       completedColor:'bg-indigo-900',
       incompleteColor: 'bg-indigo-300',

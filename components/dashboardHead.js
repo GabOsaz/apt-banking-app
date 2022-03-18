@@ -12,8 +12,12 @@ import picture1 from '../public/profile-pic-01.png'
 import picture2 from '../public/profile-pic-02.png'
 import picture3 from '../public/profile-pic-03.png'
 import DropDownIcon from '../svgs/dropDownIcon';
+import { getStringMonth } from '../utilities';
 
 function DashboardHead({ percentageIncrease, activeNav }) {
+    const options = { month: 'long'};
+    const currentMonth = new Intl.DateTimeFormat('en-US', options).format(new Date());
+
   return (
     <div>
         <div className='w-full pr-16'>
@@ -73,7 +77,7 @@ function DashboardHead({ percentageIncrease, activeNav }) {
             </div>
             <div className='mt-6 flex justify-between items-center'>
                 <div className='flex items-center space-x-5 font-semibold text-base text-dark text-opacity-60'>
-                    <span> February 2021 </span>
+                    <span>  {currentMonth} {new Date().getUTCFullYear()} </span>
                     <div className='flex space-x-4'>
                         <span> <MdOutlineChevronLeft /> </span>
                         <span> <MdOutlineChevronRight /> </span>
